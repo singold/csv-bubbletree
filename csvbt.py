@@ -1,28 +1,15 @@
 # csvbt.py
 # This file is the main script that processes the csv file and outputs a .js
 # file with the json object as a variable called 'data'.
+# All logic is taken from csv-process.py
 
+import csv-process.py
 
-#en esta funcion falta ver donde se guarda todo (json_dict) y como
-def get_childs(csv_object, json_dict):
-#gets childs recursevly 
-    
-    current_line = csv.read()
+# Constants
+HELP_TEXT = "There is no help text available, see " \
+            "https://github.com/singold/csv-bubbletree for details"
 
-    initial_label = current_line[0]
-    initial_value = current_line[1]
-
-    previous_line = current_line
-
-    csv_sub_object = None
-
-    #json_dict.add(label & value)
-
-    while previous_line = current_line:
-        csv_sub_object.add(current_line)
-
-    #json_dict.add(childs = get_childs(csv_sub_object)
-
+# Main function for CLI
 def main():
     
     if "--help" in sys.argv OR "--h" in sys.argv:
