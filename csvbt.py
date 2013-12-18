@@ -23,3 +23,10 @@ def get_childs(csv_object, json_dict):
 
     #json_dict.add(childs = get_childs(csv_sub_object)
 
+def main():
+    
+    if "--help" in sys.argv OR "--h" in sys.argv:
+	print(HELP_TEXT)
+	return
+
+main()
